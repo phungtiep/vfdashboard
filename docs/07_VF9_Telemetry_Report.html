@@ -1,0 +1,4644 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telemetry Report</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+      }
+
+      .group-container {
+        background: #fff;
+        margin-bottom: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .group-header {
+        background-color: #3498db;
+        color: #fff;
+        padding: 15px 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #ecf0f1;
+        color: #7f8c8d;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.9em;
+      }
+
+      tr:hover {
+        background-color: #f1f2f6;
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      .value-col {
+        font-family: "Consolas", monospace;
+        color: #e74c3c;
+      }
+
+      .alias-col {
+        font-weight: 500;
+        color: #2980b9;
+        font-size: 0.9em;
+      }
+
+      .no-data {
+        text-align: center;
+        padding: 20px;
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>VF9 Telemetry Report</h1>
+
+    <div class="group-container">
+      <div class="group-header">BATTERY LEASING</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">
+              BATTERY_LEASING_INFO_BATTERY_LEASING_CONTROL
+            </td>
+            <td>Battery leasing control</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">BATTERY_LEASING_INFO_CURRENT_LIMITED_SOC</td>
+            <td>Current Limited SOC</td>
+            <td class="value-col">100</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">BMS STATUS</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">
+              BMS_STATUS_BATTERY_DECODED_MANUFACTURE_DATE
+            </td>
+            <td>Battery Decoded Manufacture Date</td>
+            <td class="value-col">18-Mar-2023</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">BMS_STATUS_BATTERY_RAW_MANUFACTURE_DATE</td>
+            <td>Battery Raw Manufacture Date</td>
+            <td class="value-col">RDNK</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">BMS_STATUS_BATTERY_SERIAL_NUMBER</td>
+            <td>Battery Serial Number</td>
+            <td class="value-col">600007</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">BMS_STATUS_BATTERY_TYPE</td>
+            <td>Battery type</td>
+            <td class="value-col">CATL</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">BMS_STATUS_STATE_OF_HEALTH</td>
+            <td>State of health</td>
+            <td class="value-col">96.000000</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">BMS_STATUS_THERMAL_RUNAWAY_WARNING</td>
+            <td>Thermal runaway warning</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">CAMP MODE</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">CAMP_MODE_CONTROL_CONFIGURATION_JSON</td>
+            <td>Configuration JSON</td>
+            <td class="value-col">init_boot_up</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CAMP_MODE_CONTROL_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">CAPP PAIRING</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">CAPP_PAIRING_INFO_PHONE_PAIRING_EVENT</td>
+            <td>Phone pairing event</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CAPP_PAIRING_INFO_PRIMARY_DRIVER_PROFILE</td>
+            <td>Primary Driver profile</td>
+            <td class="value-col">
+              QkVGOTBBNkItMDA3NS00OEQ0LTgxODktNTI3OEY0REY3QzFB
+            </td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CAPP_PAIRING_INFO_SECONDARY_DRIVER_PROFILE
+            </td>
+            <td>Secondary Driver profile</td>
+            <td class="value-col">UNPAIR</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">CCARSERVICE OBJECT</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">CCARSERVICE_OBJECT_BOOKING_SERVICE_STATUS</td>
+            <td>Booking Service Status</td>
+            <td class="value-col">
+              [{"appointmentId":"CR1767663421404882701","status":"12"}]
+            </td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CCARSERVICE_OBJECT_RSA_STATUS</td>
+            <td>RSA Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CCARSERVICE_OBJECT_VEHICLE_CONNECTING_STATUS
+            </td>
+            <td>Vehicle Connecting Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CCARSERVICE_OBJECT_VEHICLE_DISCONNECTED_REASON
+            </td>
+            <td>Vehicle Disconnected Reason</td>
+            <td class="value-col">NONE</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CCARSERVICE_OBJECT_WARNING_MESSAGE_ACTIVATED_COUNTER
+            </td>
+            <td>Warning Message Activated Counter</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">CHARGE CONTROL</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">CHARGE_CONTROL_CHARGE_SCHEDULE_MODE</td>
+            <td>Charge schedule mode</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGE_CONTROL_CHARGING_INTERRUPT_WARNING</td>
+            <td>Charging interrupt warning</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGE_CONTROL_CURRENT_DEPARTURE_TIME</td>
+            <td>Current Departure time</td>
+            <td class="value-col">07:30</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGE_CONTROL_CURRENT_TARGET_SOC</td>
+            <td>Current target SOC</td>
+            <td class="value-col">100</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGE_CONTROL_ENABLE_PEAK_OFF_HOUR</td>
+            <td>Enable peak off hour</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGE_CONTROL_FULL_CHARGE_REMAINING_TIME</td>
+            <td>Full charge remaining time</td>
+            <td class="value-col">201</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGE_CONTROL_HV_STATUS</td>
+            <td>HV Status</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGE_CONTROL_PEAK_OFF_HOUR_END</td>
+            <td>Peak Off Hour End</td>
+            <td class="value-col">04:00</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGE_CONTROL_PEAK_OFF_HOUR_START</td>
+            <td>Peak Off Hour Start</td>
+            <td class="value-col">22:00</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGE_CONTROL_PLC_DUTY_CYCLE</td>
+            <td>PLC Duty Cycle</td>
+            <td class="value-col">5</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGE_CONTROL_SUPER_FAST_CHARGE_LONGER</td>
+            <td>Super Fast Charge Longer</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">CHARGING STATUS</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">CHARGING_STATUS_AC_CHARGING_GUN_STATUS</td>
+            <td>AC charging gun status</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGING_STATUS_CHARGE_LID_STATUS</td>
+            <td>Charge lid status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CHARGING_STATUS_CHARGE_SCHEDULE_CONTROL_STATUS
+            </td>
+            <td>Charge schedule control Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CHARGING_STATUS_CHARGE_SCHEDULE_START_TIME
+            </td>
+            <td>Charge schedule start time</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CHARGING_STATUS_CHARGING_GUN_AUTHENTICATE_STATUS
+            </td>
+            <td>Charging gun authenticate status</td>
+            <td class="value-col">2</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGING_STATUS_CHARGING_REMAINING_TIME</td>
+            <td>Charging remaining time</td>
+            <td class="value-col">201</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGING_STATUS_CHARGING_STATUS</td>
+            <td>Charging status</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGING_STATUS_DC_CHARGING_GUN_STATUS</td>
+            <td>DC charging gun status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGING_STATUS_ESTIMATED_RUNNING_TIME</td>
+            <td>Estimated running time</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CHARGING_STATUS_TARGET_SOC_CONTROL</td>
+            <td>Target SoC Control</td>
+            <td class="value-col">100</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">CLIMATE CONTROL</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">CLIMATE_CONTROL_AC_CONTROL_EXE_ERROR</td>
+            <td>AC Control exe error</td>
+            <td class="value-col">4</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_CONTROL_AC_CONTROL_STATUS</td>
+            <td>AC Control status</td>
+            <td class="value-col">1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">CLIMATE INFORMATION</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">CLIMATE_INFORMATION_AIR_CONDITION</td>
+            <td>Air Condition</td>
+            <td class="value-col">3</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_INFORMATION_DRIVER_AC_MODE</td>
+            <td>Driver AC Mode</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_INFORMATION_DRIVER_AIR_BLOW_LEVEL</td>
+            <td>Driver Air Blow Level</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_INFORMATION_DRIVER_AIR_FLOW</td>
+            <td>Driver Air Flow</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_INFORMATION_DRIVER_TEMPERATURE</td>
+            <td>Driver Temperature</td>
+            <td class="value-col">23.000000</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_INFORMATION_DUAL_CLIMATE_SYNC</td>
+            <td>Dual Climate Sync</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_INFORMATION_FRONT_DEFROST</td>
+            <td>Front Defrost</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CLIMATE_INFORMATION_FRONT_LEFT_SEAT_COOLING
+            </td>
+            <td>Front Left Seat Cooling</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CLIMATE_INFORMATION_FRONT_LEFT_SEAT_HEATING
+            </td>
+            <td>Front Left Seat Heating</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CLIMATE_INFORMATION_FRONT_LEFT_SEAT_VENTILATION
+            </td>
+            <td>Front Left Seat Ventilation</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CLIMATE_INFORMATION_FRONT_RIGHT_SEAT_COOLING
+            </td>
+            <td>Front Right Seat Cooling</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CLIMATE_INFORMATION_FRONT_RIGHT_SEAT_HEATING
+            </td>
+            <td>Front Right Seat Heating</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_INFORMATION_IONLIZER</td>
+            <td>Ionlizer</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_INFORMATION_MAX_AC</td>
+            <td>Max AC</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_INFORMATION_PASSENGER_TEMPERATURE</td>
+            <td>Passenger Temperature</td>
+            <td class="value-col">23.000000</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_INFORMATION_RE_CIRCULATION</td>
+            <td>Re-circulation</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CLIMATE_INFORMATION_REAR_LEFT_SEAT_COOLING
+            </td>
+            <td>Rear Left Seat Cooling</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CLIMATE_INFORMATION_REAR_LEFT_SEAT_HEATING
+            </td>
+            <td>Rear Left Seat Heating</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CLIMATE_INFORMATION_REAR_LEFT_SEAT_VENTILATION
+            </td>
+            <td>Rear Left Seat Ventilation</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CLIMATE_INFORMATION_REAR_RIGHT_SEAT_COOLING
+            </td>
+            <td>Rear Right Seat Cooling</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CLIMATE_INFORMATION_REAR_RIGHT_SEAT_HEATING
+            </td>
+            <td>Rear Right Seat Heating</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_INFORMATION_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">CLIMATE SCHEDULE</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">CLIMATE_SCHEDULE_CLIMATE_TIMER</td>
+            <td>Climate Timer</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_SCHEDULE_DEPARTURE_TIME</td>
+            <td>Departure Time</td>
+            <td class="value-col">07:00</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_SCHEDULE_PRECONDITION_DURATION</td>
+            <td>Precondition duration</td>
+            <td class="value-col">15</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_SCHEDULE_SCHEDULE_BIT_MASK</td>
+            <td>Schedule bit mask</td>
+            <td class="value-col">127</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_SCHEDULE_SCHEDULE_NOTIFICATION</td>
+            <td>ErrorCode</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_SCHEDULE_SET_DRIVER_TEMPERATURE</td>
+            <td>Set Driver Temperature</td>
+            <td class="value-col">24.0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_SCHEDULE_SET_FAN_SPEED</td>
+            <td>Set Fan speed</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              CLIMATE_SCHEDULE_SET_PASSENGER_TEMPERATURE
+            </td>
+            <td>Set Passenger Temperature</td>
+            <td class="value-col">24.0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">CLIMATE_SCHEDULE_TIMEZONE</td>
+            <td>Timezone</td>
+            <td class="value-col">GMT+07:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">DATA PRIVACY</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">DATA_PRIVACY_LOCATION_SHARING</td>
+            <td>Location Sharing</td>
+            <td class="value-col">1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">DOOR AJAR</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">DOOR_AJAR_FRONT_LEFT_DOOR_STATUS</td>
+            <td>Door Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">DOOR_AJAR_FRONT_RIGHT_DOOR_STATUS</td>
+            <td>Door Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">DOOR_AJAR_REAR_LEFT_DOOR_STATUS</td>
+            <td>Door Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">DOOR_AJAR_REAR_RIGHT_DOOR_STATUS</td>
+            <td>Door Status</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">DOOR BONNET</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">DOOR_BONNET_DOOR_STATUS</td>
+            <td>Door Status</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">DOOR TRUNK</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">DOOR_TRUNK_DOOR_STATUS</td>
+            <td>Door Status</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">ECUS INFORMATION</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_ACM_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80010041</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_ACM_CALIBRATION_REVISION</td>
+            <td>Calibration Revision</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_ACM_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x08</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_ACM_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">ACM</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_ACM_HARDWARE_VERSION</td>
+            <td>Hardware version</td>
+            <td class="value-col">02</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_ACM_SOFTWARE_VERSION</td>
+            <td>Software version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_ACM_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP30010045</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_ACM_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW30010051</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_AMP_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">05</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_AMP_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x05</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_AMP_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">AMP</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_AMP_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">13</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_AMP_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP80005041</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_AMP_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80005047</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_APM_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">03</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_APM_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x41</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_APM_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">APM</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_APM_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_APM_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP10006197</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_APM_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80008610</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_ASU_G_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_ASU_G_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x11</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_ASU_G_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">ASU_G</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_ASU_G_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">02</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_ASU_G_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP80460011</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_ASU_G_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80560020</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_BCM_BPM_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_BCM_BPM_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x7B</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_BCM_BPM_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">BCM_BPM</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_BCM_BPM_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">09</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_BCM_BPM_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP80009046</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_BCM_BPM_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80009104</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_BCM_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_BCM_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">BCM</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_BCM_HARDWARE_VERSION</td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_BCM_SOFTWARE_VERSION</td>
+            <td>Software version</td>
+            <td class="value-col">09</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_BCM_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP80009046</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_BCM_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80009102</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_BMS_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x13</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_BMS_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">BMS</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_BMS_HARDWARE_VERSION</td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_BMS_SOFTWARE_VERSION</td>
+            <td>Software version</td>
+            <td class="value-col">23</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_BMS_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">BAT80002013</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_BMS_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80002200</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_CCU_F_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80307209</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_CCU_F_CALIBRATION_REVISION
+            </td>
+            <td>Calibration Revision</td>
+            <td class="value-col">07</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_CCU_F_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">04</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_CCU_F_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x09</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_CCU_F_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">CCU_F</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_CCU_F_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">08</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_CCU_F_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP80006107</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_CCU_F_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80407109</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_CCU_R_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80307210</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_CCU_R_CALIBRATION_REVISION
+            </td>
+            <td>Calibration Revision</td>
+            <td class="value-col">04</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_CCU_R_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">04</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_CCU_R_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x14</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_CCU_R_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">CCU_R</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_CCU_R_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">08</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_CCU_R_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP80006108</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_CCU_R_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80407110</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_DCDC_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_DCDC_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x3D</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_DCDC_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">DCDC</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_DCDC_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">09</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_DCDC_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP30063302</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_DCDC_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW30061021</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EASC_APPLICATION_PARTNUMBER
+            </td>
+            <td>Application partnumber</td>
+            <td class="value-col">SOW80000055</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EASC_APPLICATION_REVISION
+            </td>
+            <td>Application Revision</td>
+            <td class="value-col">02</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EASC_BASIC_SOFTWARE_DATA_PARTNUMBER
+            </td>
+            <td>Basic Software Data Partnumber</td>
+            <td class="value-col">SOW80000054</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EASC_BASIC_SOFTWARE_DATA_REVISION
+            </td>
+            <td>Basic Software Data Revision</td>
+            <td class="value-col">02</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EASC_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">00</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_EASC_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x2E</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_EASC_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">EASC</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EASC_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">CHS80005003</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EDS_F_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW30073454</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EDS_F_CALIBRATION_REVISION
+            </td>
+            <td>Calibration Revision</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EDS_F_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_EDS_F_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x1B</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_EDS_F_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">EDS_F</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EDS_F_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EDS_F_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEH30073002</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EDS_F_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80073216</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EDS_R_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80073459</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EDS_R_CALIBRATION_REVISION
+            </td>
+            <td>Calibration Revision</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EDS_R_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_EDS_R_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x1A</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_EDS_R_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">EDS_R</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EDS_R_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EDS_R_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEH30073003</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EDS_R_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80073218</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EPS1_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_EPS1_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x28</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_EPS1_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">EPS1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EPS1_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">04</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EPS1_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">CHS80004019</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EPS1_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80000200</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EPS2_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_EPS2_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x2B</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_EPS2_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">EPS2</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EPS2_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">04</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EPS2_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">CHS80004019</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_EPS2_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80000200</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_ETG_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x0E</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_ETG_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">ETG</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_ETG_HARDWARE_VERSION</td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_ETG_SOFTWARE_VERSION</td>
+            <td>Software version</td>
+            <td class="value-col">06</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_ETG_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">BIW30039006</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_ETG_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80039117</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_HUD_APPLICATION_PARTNUMBER
+            </td>
+            <td>Application partnumber</td>
+            <td class="value-col">SOW80466051</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_HUD_APPLICATION_REVISION</td>
+            <td>Application Revision</td>
+            <td class="value-col">58</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_HUD_BASIC_SOFTWARE_DATA_PARTNUMBER
+            </td>
+            <td>Basic Software Data Partnumber</td>
+            <td class="value-col">SOW80406600</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_HUD_BASIC_SOFTWARE_DATA_REVISION
+            </td>
+            <td>Basic Software Data Revision</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_HUD_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">02</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_HUD_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x0D</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_HUD_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">HUD</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_HUD_HMI_SOFTWARE_DATA_PARTNUMBER
+            </td>
+            <td>HMI Software Data Partnumber</td>
+            <td class="value-col">SOW80416300</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_HUD_HMI_SOFTWARE_DATA_REVISION
+            </td>
+            <td>HMI Software Data Revision</td>
+            <td class="value-col">53</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_HUD_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP80305014</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_IDB_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80000311</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_IDB_CALIBRATION_REVISION</td>
+            <td>Calibration Revision</td>
+            <td class="value-col">04</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_IDB_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">07</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_IDB_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x29</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_IDB_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">IDB</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_IDB_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">05</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_IDB_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">CHS30014031</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_IDB_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80000301</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_LDM_L_CALIBRATION_REVISION
+            </td>
+            <td>Calibration Revision</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_LDM_R_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80162225</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_LDM_R_CALIBRATION_REVISION
+            </td>
+            <td>Calibration Revision</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_LDM_R_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">03</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_LDM_R_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x4A</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_LDM_R_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">LDM_R</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_LDM_R_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_LDM_R_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">BEX80162212</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_LDM_R_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80162221</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_MHU_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x04</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_MHU_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">MHU</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_MHU_HARDWARE_VERSION</td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_MHU_SOFTWARE_VERSION</td>
+            <td>Software version</td>
+            <td class="value-col">09</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_MHU_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP80006158</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_MHU_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80008121</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_MRGEN_APPLICATION_PARTNUMBER
+            </td>
+            <td>Application partnumber</td>
+            <td class="value-col">SOW30008009</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_MRGEN_APPLICATION_REVISION
+            </td>
+            <td>Application Revision</td>
+            <td class="value-col">05</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_MRGEN_BASIC_SOFTWARE_DATA_PARTNUMBER
+            </td>
+            <td>Basic Software Data Partnumber</td>
+            <td class="value-col">SOW30008027</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_MRGEN_BASIC_SOFTWARE_DATA_REVISION
+            </td>
+            <td>Basic Software Data Revision</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_MRGEN_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80008024</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_MRGEN_CALIBRATION_REVISION
+            </td>
+            <td>Calibration Revision</td>
+            <td class="value-col">03</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_MRGEN_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_MRGEN_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x25</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_MRGEN_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">MRGEN</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_MRGEN_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP30008110</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_OBC_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_OBC_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x3E</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_OBC_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">OBC</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_OBC_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">09</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_OBC_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP30063302</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_OBC_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW30061023</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_OCS_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_OCS_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x44</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_OCS_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">OCS</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_OCS_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_OCS_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">BIN30022839</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_OCS_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW30023855</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_POD_GW_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_POD_GW_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x3F</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_POD_GW_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">POD_GW</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_POD_GW_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">10</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_POD_GW_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP30063302</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_POD_GW_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW30061026</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_PSM_D_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_PSM_D_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x1E</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_PSM_D_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">PSM_D</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_PSM_D_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">03</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_PSM_D_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">BIN80023910</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_PSM_D_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80171842</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_RCU_APPLICATION_PARTNUMBER
+            </td>
+            <td>Application partnumber</td>
+            <td class="value-col">SOW80000182</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_RCU_APPLICATION_REVISION</td>
+            <td>Application Revision</td>
+            <td class="value-col">05</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_RCU_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80000181</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_RCU_CALIBRATION_REVISION</td>
+            <td>Calibration Revision</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_RCU_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">07</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_RCU_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x27</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_RCU_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">RCU</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_RCU_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">05</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_RCU_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">CHS30014035</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_RCU_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80000180</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SCAM_APPLICATION_PARTNUMBER
+            </td>
+            <td>Application partnumber</td>
+            <td class="value-col">SOW30008021</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SCAM_APPLICATION_REVISION
+            </td>
+            <td>Application Revision</td>
+            <td class="value-col">12</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SCAM_BASIC_SOFTWARE_DATA_PARTNUMBER
+            </td>
+            <td>Basic Software Data Partnumber</td>
+            <td class="value-col">SOW30008026</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SCAM_BASIC_SOFTWARE_DATA_REVISION
+            </td>
+            <td>Basic Software Data Revision</td>
+            <td class="value-col">02</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SCAM_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80008013</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SCAM_CALIBRATION_REVISION
+            </td>
+            <td>Calibration Revision</td>
+            <td class="value-col">09</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SCAM_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SCAM_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x26</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SCAM_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">SCAM</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SCAM_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP30008131</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SHVU_F_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SHVU_F_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x42</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SHVU_F_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">SHVU_F</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SHVU_F_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SHVU_F_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">BIN30022879</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SHVU_F_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW30171037</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SHVU_R_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SHVU_R_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x43</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SHVU_R_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">SHVU_R</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SHVU_R_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SHVU_R_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">BIN30022879</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SHVU_R_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW30171041</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_FL_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80008023</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_FL_CALIBRATION_REVISION
+            </td>
+            <td>Calibration Revision</td>
+            <td class="value-col">04</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_FL_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SRR_FL_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x35</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SRR_FL_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">SRR_FL</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_FL_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">05</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_FL_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP30008133</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_FL_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW30008022</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_FR_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80008023</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_FR_CALIBRATION_REVISION
+            </td>
+            <td>Calibration Revision</td>
+            <td class="value-col">04</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_FR_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SRR_FR_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x34</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SRR_FR_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">SRR_FR</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_FR_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">05</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_FR_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP30008133</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_FR_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW30008022</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_RL_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80008023</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_RL_CALIBRATION_REVISION
+            </td>
+            <td>Calibration Revision</td>
+            <td class="value-col">04</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_RL_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SRR_RL_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x37</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SRR_RL_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">SRR_RL</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_RL_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">05</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_RL_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP30008133</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_RL_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW30008022</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_RR_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80008023</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_RR_CALIBRATION_REVISION
+            </td>
+            <td>Calibration Revision</td>
+            <td class="value-col">04</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_RR_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SRR_RR_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x36</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_SRR_RR_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">SRR_RR</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_RR_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">05</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_RR_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP30008133</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_SRR_RR_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW30008022</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_TBOX_ECU_HARDWARE_REVISION
+            </td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_TBOX_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x00</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_TBOX_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">TBOX</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_TBOX_ECU_SOFTWARE_REVISION
+            </td>
+            <td>Software version</td>
+            <td class="value-col">09</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_TBOX_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP80006158</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_TBOX_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80008122</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_VCU_APPLICATION_PARTNUMBER
+            </td>
+            <td>Application partnumber</td>
+            <td class="value-col">SOW80016073</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_VCU_APPLICATION_REVISION</td>
+            <td>Application Revision</td>
+            <td class="value-col">13</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_VCU_BASIC_SOFTWARE_DATA_PARTNUMBER
+            </td>
+            <td>Basic Software Data Partnumber</td>
+            <td class="value-col">SOW80016074</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_VCU_BASIC_SOFTWARE_DATA_REVISION
+            </td>
+            <td>Basic Software Data Revision</td>
+            <td class="value-col">13</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_VCU_CALIBRATION_PARTNUMBER
+            </td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80016079</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_VCU_CALIBRATION_REVISION</td>
+            <td>Calibration Revision</td>
+            <td class="value-col">13</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_VCU_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x2C</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_VCU_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">VCU</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_VCU_HARDWARE_VERSION</td>
+            <td>Hardware version</td>
+            <td class="value-col">02</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_VCU_SOFTWARE_VERSION</td>
+            <td>Software version</td>
+            <td class="value-col">13</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_VCU_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP30009023</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_VCU_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80016072</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_XGW_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x02</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_XGW_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">XGW</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_XGW_HARDWARE_VERSION</td>
+            <td>Hardware version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">ECUS_INFORMATION_XGW_SOFTWARE_VERSION</td>
+            <td>Software version</td>
+            <td class="value-col">09</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_XGW_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">EEP30009831</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              ECUS_INFORMATION_XGW_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80009431</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">FIRMWARE UPDATE</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">FIRMWARE_UPDATE_CURRENT_PKG_VERSION</td>
+            <td>Current Pkg Version</td>
+            <td class="value-col">FRS 9A.5.10.13</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">FIRMWARE_UPDATE_CURRENT_TARGET_PROGRESS</td>
+            <td>Current Target progress</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">FIRMWARE_UPDATE_DOWNLOAD_REMAINING_TIME</td>
+            <td>Download remaining time</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              FIRMWARE_UPDATE_FIRMWARE_UPDATE_ERROR_CODE
+            </td>
+            <td>Firmware Update Error Code</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">FIRMWARE_UPDATE_INSTALLING_REMAINING_TIME</td>
+            <td>Installing remaining time</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">FIRMWARE_UPDATE_INSTALLING_TIME</td>
+            <td>Installing time</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">FIRMWARE_UPDATE_REFER_DOWNLOAD_METHOD</td>
+            <td>Refer download method</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              FIRMWARE_UPDATE_TOTAL_DOWNLOADING_PROGRESS
+            </td>
+            <td>Total downloading progress</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">FIRMWARE_UPDATE_TOTAL_OVERALL_PROGRESS</td>
+            <td>Total Overall Progress</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">FOTA COMMAND</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">FOTA_COMMAND_CONFIG</td>
+            <td>Config</td>
+            <td class="value-col">ewogICJhdXRvRG93bmxvYWQiIDogIjMiCn0=</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">FOTA_COMMAND_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">
+              ewogICJyZW1haW5pbmdUaW1lSW5TZWNvbmRzIiA6IDAsCiAgInBlcmNlbnQiIDogMCwKICAic29mdHdhcmVWZXJzaW9uIiA6ICI5QS41LjEwLjEyIiwKICAicHJlY29uZGl0aW9uRXJyb3IiIDogMCwKICAic3RhdHVzIiA6ICJVUF9UT19EQVRFIgp9
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">IMMOBILIZATION</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">IMMOBILIZATION_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">INTRUSION</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">INTRUSION_CONFIGURATION</td>
+            <td>Configuration</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">INTRUSION_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">LOCATION</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">LOCATION_LATITUDE</td>
+            <td>Latitude</td>
+            <td class="value-col">20.991793</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">LOCATION_LONGITUDE</td>
+            <td>Longitude</td>
+            <td class="value-col">105.867233</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">LOCATION BEARING</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">LOCATION_BEARING_DEGREE</td>
+            <td>Bearing Degree</td>
+            <td class="value-col">272</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">LOCATION GNSS</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">LOCATION_GNSS_STATUS</td>
+            <td>GNSS status</td>
+            <td class="value-col">1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">NETWORK ACCESS</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">
+              NETWORK_ACCESS_DEVICE_INFO_CELL_IDENTIFIER_CID
+            </td>
+            <td>Cell Identifier (CID)</td>
+            <td class="value-col">76010247</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              NETWORK_ACCESS_DEVICE_INFO_MOBILE_COUNTRY_CODE_MCC
+            </td>
+            <td>Mobile Country Code (MCC)</td>
+            <td class="value-col">452</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              NETWORK_ACCESS_DEVICE_INFO_MOBILE_NETWORK_CODE_MNC
+            </td>
+            <td>Mobile Network Code (MNC)</td>
+            <td class="value-col">04</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              NETWORK_ACCESS_DEVICE_INFO_NETWORK_TECHNOLOGY
+            </td>
+            <td>Network technology</td>
+            <td class="value-col">LTE</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">NETWORK_ACCESS_DEVICE_INFO_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">NETWORK_ACCESS_DEVICE_INFO_WAKEUP_SOURCE</td>
+            <td>Wakeup source</td>
+            <td class="value-col">5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">PET MODE</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">PET_MODE_CONTROL_CONFIGURATION_JSON</td>
+            <td>Configuration JSON</td>
+            <td class="value-col">init_boot_up</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">PET_MODE_CONTROL_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">REMOTE CONTROL</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">REMOTE_CONTROL_BONNET_CONTROL_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">REMOTE_CONTROL_CHARGE_PORT_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">REMOTE_CONTROL_DOOR_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">REMOTE_CONTROL_HORN_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">REMOTE_CONTROL_LIGHT_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">REMOTE_CONTROL_SUNROOF_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">REMOTE_CONTROL_TESTCOMMAND_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">REMOTE_CONTROL_TRUNK_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">REMOTE_CONTROL_WINDOW_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">TELLTALES NOTIFICATION</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">TELLTALES_NOTIFICATION_AUTO_DTC</td>
+            <td>Auto DTC</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">TELLTALES_NOTIFICATION_ENABLE</td>
+            <td>Enable</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_12V_LITHIUM_BATTERY_EXTREMELY_COLD_CONDITION
+            </td>
+            <td>Charging Gun Not Pulled Warning</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_12V_LITHIUM_BATTERY_LOW_TEMP
+            </td>
+            <td>Remaining Mileage Invalid Warning</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_12V_LITHIUM_BATTERY_MALFUNCTION
+            </td>
+            <td>No Smart Key Detected in Car</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_12V_LITHIUM_BATTERY_NOT_CHARGING
+            </td>
+            <td>Smart Key Battery Low</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_12V_LITHIUM_BATTERY_OVERHEATING
+            </td>
+            <td>Brake Fluid Level Too Low</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_12V_LITHIUM_BATTERY_THERMAL_RUNAWAY
+            </td>
+            <td>Illegal Key Detected</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_ACM_ALIVE_MONITORING
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">TELLTALES_NOTIFICATION_NULL_ACM_DISABLED</td>
+            <td>Airbag System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_ACM_IN_CALIBRATION_MODE
+            </td>
+            <td>Electronic Stability Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_ACOUSTIC_PEDESTRIAN_ALERT_SYSTEM_DISABLED
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_ACOUSTIC_PEDESTRIAN_ALERT_SYSTEM_FAILED
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_AEB_AUTO_EMERGENCY_BRAKING_UNAVAILABLE_TEMPORARILY
+            </td>
+            <td>EV Battery Over Heat</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_AIRBAG_MALFUNCTION
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_ASU_MALFUNCTION_WARNING_1
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_ASU_MALFUNCTION_WARNING_2
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_AUTO_HEADLIGHT_LEVELING_MALFUNCTION
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BATTERY_COOLANT_LEAKAGE_DETECTED
+            </td>
+            <td>Immobilizer System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BATTERY_MODULE_SYSTEM_ALIVE_MONITORING
+            </td>
+            <td>12V Battery Charge System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_12V_BATTERY_NEED_TO_CHECK
+            </td>
+            <td>Gear Signal Invalid</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_12V_BATTERY_NOT_CHARGING
+            </td>
+            <td>Vehicle Speed Signal Invalid</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_DAYTIME_RUNNING_LIGHT_DEFECT
+            </td>
+            <td>Anti Lock Braking System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_DOORS_ALIVE_MONITORING
+            </td>
+            <td>12V Battery Charge System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_FRONT_FOG_LAMP_DEFECT
+            </td>
+            <td>Brake System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_HEADLAMP_DEFECT
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_LICENSE_PLATE_LIGHT_DEFECT
+            </td>
+            <td>Electronic Stability Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_LIGHTING_ALIVE_MONITORING
+            </td>
+            <td>EV Charge Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_POSITION_LIGHT_DEFECT
+            </td>
+            <td>Airbag System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_REAR_FOG_LAMP_DEFECT
+            </td>
+            <td>Electric Power Steering System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_REVERSE_LAMP_DEFECT
+            </td>
+            <td>Vehicle Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_STOP_LIGHT_DEFECT
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BCM_TURN_INDICATOR_DEFECT
+            </td>
+            <td>Drivetrain System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BLIND_SPOT_DETECTION_TEMPORARY_UNAVAILABLE
+            </td>
+            <td>Lost Communication with CCU System</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BMS_MALFUNCTION
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_BRAKE_FLUID_LOW
+            </td>
+            <td>Electronic Stability Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">TELLTALES_NOTIFICATION_NULL_CHMSL_DEFECT</td>
+            <td>Immobilizer System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_CLIMATE_CONTROL_MALFUNCTION
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_COOLING_SYSTEM_MALFUNCTION
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_CPD_CHILD_PRESENCE_PROTECTION_MALFUNCTION
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_DMS_DRIVER_MONITORING_CAMERA_DEFECT
+            </td>
+            <td>Maintenance and Inspection</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_E_HANDBRAKE_FAULT
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_ECALL_MALFUNCTION
+            </td>
+            <td>Airbag System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_ELECTRIC_TAILGATE_MALFUNCTION
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EPB_EOL_CONFIG_NOT_DONE
+            </td>
+            <td>Airbag System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EPB_MONITORING_FAULT
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EPB_ROLLER_BENCH_MODE
+            </td>
+            <td>Electronic Stability Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EPS_ALIVE_MONITORING
+            </td>
+            <td>Electronic Stability Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EPS_MALFUNCTION
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_ESC_MALFUNCTION
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EV_BATTERY_CELL_IMBALANCE
+            </td>
+            <td>Transmission Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EV_BATTERY_DANGER_RUNAWAY
+            </td>
+            <td>Electronic Stability Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EV_BATTERY_FROZEN
+            </td>
+            <td>12V Low Battery</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EV_BATTERY_ISOLATION_ERROR
+            </td>
+            <td>Vehicle Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EV_BATTERY_NEED_REPLACE
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EV_BATTERY_OVERHEATING_LEVEL_1
+            </td>
+            <td>Brake System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EV_BATTERY_OVERHEATING_LEVEL_2
+            </td>
+            <td>Electric Power Steering System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EV_BATTERY_VERY_COLD_CONDITION
+            </td>
+            <td>Anti Lock Braking System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EV_BATTERY_VERY_LOW
+            </td>
+            <td>Airbag System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_EV_HIGH_VOLTAGE_INTERLOCK_LOOP_FAULT
+            </td>
+            <td>Vehicle Speed Signal Invalid</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_FPD_LINK_III_FAULT
+            </td>
+            <td>Anti Lock Braking System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_FRONT_WIPER_DEFECT
+            </td>
+            <td>Power Limitation Warning</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_GEAR_MALFUNCTION
+            </td>
+            <td>Airbag System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_GEAR_P_NOT_POSSIBLE
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_HARDWIRED_CRASH_DEFECT
+            </td>
+            <td>iTPMS Signal Invalid</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_HEAD_UP_DISPLAY_FAULT
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_HUD_SENSOR_DEFECT
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_IDB_ABS_ESC_MONITORING_FAULT
+            </td>
+            <td>Airbag System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_IDB_ABS_MALFUNCTION
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_IDB_BRAKE_SYSTEM_FAULT
+            </td>
+            <td>Anti Lock Braking System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_IDB_HILL_START_ASSIST_MALFUNCTION
+            </td>
+            <td>Electric Power Steering System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_IDB_HYDRAULIC_BRAKE_ASSIST_MALFUNCTION
+            </td>
+            <td>Brake System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_IDB_TRAILER_SWAY_MITIGATION_MALFUNCTION
+            </td>
+            <td>Vehicle Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_IMMOBILIZER_NO_KEY_INSIDE_THE_CAR
+            </td>
+            <td>EV Battery Management System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_IMMOBILIZER_NOT_RELEASED
+            </td>
+            <td>EV Battery Management System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_IPC_SPEAKER_FAULT
+            </td>
+            <td>Electronic Stability Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_KEYFOB_LOW_BATTERY
+            </td>
+            <td>EV Battery Over Heat</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_LDM_ADAPTIVE_LIGHT_MALFUNCTION
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_LOW_LEVEL_COOLANT_WATER
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_PASSENGER_AIRBAG_SUPPRESSION_MALFUNCTION
+            </td>
+            <td>Anti Lock Braking System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_PSM_DRIVER_POWER_SEAT_TRACK_MISALIGNMENT
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_PSM_POWER_PASSENGER_SEAT_TRACK_MISALIGNMENT
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_RAIN_LIGHT_SENSOR_DEFECT
+            </td>
+            <td>Transmission Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_RCU_E_HANDBRAKE_FAULT
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_STEERING_ASSISTANCE_REDUCED
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_STEERING_COLUMN_FAULT
+            </td>
+            <td>Ambient Temperature Signal Invalid</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_STEERING_SYSTEM_OVERHEATING
+            </td>
+            <td>Airbag System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_TBOX_BATTERY_NEED_TO_REPLACE
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_TPMS_FRONT_LEFT_LOWER_PRESSURE
+            </td>
+            <td>Airbag System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_TPMS_FRONT_RIGHT_LOW_PRESSURE
+            </td>
+            <td>Electronic Stability Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_TPMS_MALFUNCTION
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_TPMS_REAR_LEFT_LOW_PRESSURE
+            </td>
+            <td>Anti Lock Braking System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_TPMS_REAR_RIGHT_LOW_PRESSURE
+            </td>
+            <td>Brake System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_TPMS_SENSOR_LOW_BATTERY
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_TPMS_TIRES_HIGH_PRESSURE
+            </td>
+            <td>Electric Power Steering System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_TRAILER_SYSTEM_MALFUNCTION
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_TSR_TRAFFIC_SIGN_RECOGNIZATION_DEGRATION
+            </td>
+            <td>Gear Signal Invalid</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_UNABLE_TO_CHANGE_GEAR_NO_VALID_KEY_INSIDE
+            </td>
+            <td>Transmission Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_UNABLE_TO_CHANGE_GEAR_POSITION
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_UNABLE_TO_CHANGE_GEAR_POSITION_VEHICLE_LOCKED
+            </td>
+            <td>EV Charge Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_VCU_ALIVE_MONITORING
+            </td>
+            <td>Vehicle Speed Signal Invalid</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_VCU_CHARGING_PORT_DOOR_DEFECTIVE
+            </td>
+            <td>Vehicle Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_VCU_ELECTRIC_MOTOR_POWER_REDUCED
+            </td>
+            <td>Brake System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_VCU_HV_SYSTEM_POWER_REDUCED
+            </td>
+            <td>Anti Lock Braking System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_VCU_REGENERATIVE_BRAKING_MALFUNCTION
+            </td>
+            <td>Electronic Stability Control System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_VEHICLE_DRIVE_SYSTEM_FAULT
+            </td>
+            <td>Electric Power Steering System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_WASHER_WATER_IS_LOW
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_WINDOW_ANTI_PINCH_MALFUNCTION
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_WINDOW_UNABLE_TO_CLOSE
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_WIRELESS_CHARGER_DEFECTIVE
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_WIRELESS_CHARGER_OVERHEATING
+            </td>
+            <td>Enable</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              TELLTALES_NOTIFICATION_NULL_XGW_ALIVE_MONITORING
+            </td>
+            <td>Airbag System Fault</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">TELLTALES_NOTIFICATION_STATE</td>
+            <td>State</td>
+            <td class="value-col">1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">VALET MODE</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">VALET_MODE_CONTROL_CONFIGURATION_JSON</td>
+            <td>Configuration JSON</td>
+            <td class="value-col">W3siUElOIjoiODg0ODE1In1d</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VALET_MODE_CONTROL_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">VEHICLE STATUS</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_AMBIENT_TEMPERATURE</td>
+            <td>Ambient Temperature</td>
+            <td class="value-col">24</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_AUTODIAG</td>
+            <td>AutoDiag</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_BRAKE_REGEN_MODE</td>
+            <td>Brake Regen Mode</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_CAPP_STATUS</td>
+            <td>Capp status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_FRONT_LEFT_TIRE_PRESSURE</td>
+            <td>Front left tire pressure</td>
+            <td class="value-col">244</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_STATUS_FRONT_LEFT_TIRE_TEMPERATURE
+            </td>
+            <td>Front left tire temperature</td>
+            <td class="value-col">24</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_FRONT_RIGHT_TIRE_PRESSURE</td>
+            <td>Front right tire pressure</td>
+            <td class="value-col">244</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_STATUS_FRONT_RIGHT_TIRE_TEMPERATURE
+            </td>
+            <td>Front right tire temperature</td>
+            <td class="value-col">25</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_GEAR_POSITION</td>
+            <td>Gear Position</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_HANDBRAKE_STATUS</td>
+            <td>Handbrake status</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_HV_BATTERY_SOC</td>
+            <td>HV Battery SOC</td>
+            <td class="value-col">72</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_IGNITION_STATUS</td>
+            <td>Ignition Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_LV_BATTERY_SOC</td>
+            <td>LV Battery SOC</td>
+            <td class="value-col">97</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_ODOMETER</td>
+            <td>Odometer</td>
+            <td class="value-col">43197.414000</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_REAR_LEFT_TIRE_PRESSURE</td>
+            <td>Rear left tire pressure</td>
+            <td class="value-col">247</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_REAR_LEFT_TIRE_TEMPERATURE</td>
+            <td>Rear left tire temperature</td>
+            <td class="value-col">25</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_REAR_RIGHT_TIRE_PRESSURE</td>
+            <td>Rear right tire pressure</td>
+            <td class="value-col">247</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_STATUS_REAR_RIGHT_TIRE_TEMPERATURE
+            </td>
+            <td>Rear right tire temperature</td>
+            <td class="value-col">24</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_REMAINING_DISTANCE</td>
+            <td>Remaining distance</td>
+            <td class="value-col">416</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_REMOTE_CONTROL_STATUS</td>
+            <td>Remote Control status</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_START_AUTODIAG</td>
+            <td>Start AutoDiag</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VEHICLE_STATUS_VEHICLE_SPEED</td>
+            <td>Vehicle speed</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">VEHICLE WARNINGS</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_ANTI_THIEF_DECTECTION_ALARM_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_BONNET_OPENING_WARNING_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_CHARGE_LID_OPENING_WARNING_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_CHILD_PRESENT_DETECTION_ALARM_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_COOLANT_LEVEL_LOW_WARNING_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_DOORS_TRUNK_OPENING_WARNING_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_FRONT_LEFT_TIRE_PRESSURE_LOW_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_FRONT_RIGHT_TIRE_PRESSURE_LOW_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_HV_BATTERY_LOW_SOC_WARNING_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_LOW_FUEL_BATTERY_WARNING_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_NULL_LV_BATERRY_DRAIN_DUE_TO_HAZARD_LIGHT_ON
+            </td>
+            <td>Name</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_NULL_LV_BATERRY_DRAIN_DUE_TO_PARKING_LIGHT_ON
+            </td>
+            <td>State</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_REAR_LEFT_TIRE_PRESSURE_LOW_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_REAR_RIGHT_TIRE_PRESSURE_LOW_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_SPEED_LIMIT_WARNING_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_SUNROOF_OPENING_WARNING_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_TRUNK_OPENING_WARNING_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VEHICLE_WARNINGS_WINDOWS_OPENING_WARNING_STATUS
+            </td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">VERSION INFO</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">VERSION_INFO_MESSAGE_PROTOCOL_VERSION</td>
+            <td>Message protocol version</td>
+            <td class="value-col">1.3</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VERSION_INFO_RELEASE_DATE</td>
+            <td>Release date</td>
+            <td class="value-col">2025-10-20,17:28</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VERSION_INFO_TBOX_SOFTWARE_VERSION</td>
+            <td>TBOX software version</td>
+            <td class="value-col">5.12.3.VN</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VERSION_INFO_VERSION</td>
+            <td>Version</td>
+            <td class="value-col">2.1.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">VINFAST ECU</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">VINFAST_ECU_XGW_CALIBRATION_PARTNUMBER</td>
+            <td>Calibration partnumber</td>
+            <td class="value-col">SOW80162125</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VINFAST_ECU_XGW_ECU_IDENTIFIER</td>
+            <td>ECU Identifier</td>
+            <td class="value-col">0x49</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VINFAST_ECU_XGW_ECU_NAME</td>
+            <td>ECU Name</td>
+            <td class="value-col">LDM_L</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VINFAST_ECU_XGW_HARDWARE_VERSION</td>
+            <td>Hardware version</td>
+            <td class="value-col">03</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VINFAST_ECU_XGW_SOFTWARE_VERSION</td>
+            <td>Software version</td>
+            <td class="value-col">01</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VINFAST_ECU_XGW_VINFAST_ECU_HARDWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Hardware partnumber</td>
+            <td class="value-col">BEX80162112</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VINFAST_ECU_XGW_VINFAST_ECU_SOFTWARE_PARTNUMBER
+            </td>
+            <td>Vinfast ECU Software partnumber</td>
+            <td class="value-col">SOW80162121</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">VINFAST VEHICLE IDENTIFIER</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">VINFAST_VEHICLE_IDENTIFIER_MODEL_YEAR</td>
+            <td>Model year</td>
+            <td class="value-col">2023</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VINFAST_VEHICLE_IDENTIFIER_VEHICLE_MANUFACTURER
+            </td>
+            <td>Vehicle Manufacturer</td>
+            <td class="value-col">VinFast</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VINFAST_VEHICLE_IDENTIFIER_VEHICLE_NAME</td>
+            <td>Vehicle Name</td>
+            <td class="value-col">DeepBlue VF9</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VINFAST_VEHICLE_IDENTIFIER_VEHICLE_OWNER</td>
+            <td>Vehicle Owner</td>
+            <td class="value-col">
+              {"profile_rule":"ROLE_MASTER_DRIVER","profile_email":"nwaves@gmail.com"}
+            </td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VINFAST_VEHICLE_IDENTIFIER_VEHICLE_PRODUCTION_IDENTIFIER
+            </td>
+            <td>Vehicle production identifier</td>
+            <td class="value-col">705671</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VINFAST_VEHICLE_IDENTIFIER_VIN_NUMBER</td>
+            <td>VIN Number</td>
+            <td class="value-col">RLLV2CWA5PH705671</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">VINFAST VEHICLE MASTER</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">VINFAST_VEHICLE_MASTER_INFO_ENGINE_TYPE</td>
+            <td>Engine Type</td>
+            <td class="value-col">BEV</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VINFAST_VEHICLE_MASTER_INFO_MARKET_AREA</td>
+            <td>Market Area</td>
+            <td class="value-col">VN</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VINFAST_VEHICLE_MASTER_INFO_MARKETING_NAME
+            </td>
+            <td>Marketing Name</td>
+            <td class="value-col">VF9</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VINFAST_VEHICLE_MASTER_INFO_TBOX_DB_VARIANT
+            </td>
+            <td>TBOX DB Variant</td>
+            <td class="value-col">VF9</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">VINFAST_VEHICLE_MASTER_INFO_VEHICLE_CLASS</td>
+            <td>Vehicle class</td>
+            <td class="value-col">E</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VINFAST_VEHICLE_MASTER_INFO_VEHICLE_PLATFORM
+            </td>
+            <td>Vehicle platform</td>
+            <td class="value-col">SUV</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VINFAST_VEHICLE_MASTER_INFO_VEHICLE_VARIANT
+            </td>
+            <td>Vehicle Variant</td>
+            <td class="value-col">PLUS</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">
+              VINFAST_VEHICLE_MASTER_INFO_YEAR_OF_PRODUCTION
+            </td>
+            <td>Year of production</td>
+            <td class="value-col">2023</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">WINDOW AJAR</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">WINDOW_AJAR_FRONT_LEFT_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">WINDOW_AJAR_FRONT_RIGHT_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">WINDOW_AJAR_REAR_LEFT_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">1</td>
+          </tr>
+
+          <tr>
+            <td class="alias-col">WINDOW_AJAR_REAR_RIGHT_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">WINDOW SUNROOF</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">WINDOW_SUNROOF_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="group-container">
+      <div class="group-header">WINDOW SUNSHADE</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 40%">Alias</th>
+            <th style="width: 30%">Name</th>
+            <th style="width: 30%">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="alias-col">WINDOW_SUNSHADE_STATUS</td>
+            <td>Status</td>
+            <td class="value-col">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

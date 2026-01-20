@@ -1,0 +1,20 @@
+---
+const { title } = Astro.props;
+import '../styles/global.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+        <link rel="shortcut icon" href="/favicon.ico">
+		<meta name="viewport" content="width=device-width" />
+		<title>{title || "VinFast Dashboard"}</title>
+	</head>
+	<body class="bg-gray-50 h-[100dvh] w-screen overflow-hidden md:h-auto md:w-auto md:min-h-screen md:overflow-y-auto text-gray-900 selection:bg-blue-500 selection:text-white">
+        <slot />
+	</body>
+</html>

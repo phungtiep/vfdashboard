@@ -1,0 +1,8 @@
+name = "vfdashboard"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[kv_namespaces]]
+binding = "VFDashboard"
+id = "202428018ac14c41b9ee664eff91cf81"
